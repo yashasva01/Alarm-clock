@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.alarm-list{
+    position: relative;
+    top: 7vh;
+    left: 30vw;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 40vw;
+    padding: 1%;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.title {
+    /* border: 1px solid black; */
+    color: #6d5dfc;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+.title h1{
+    height: 90%;
+}
+
+
+/* main upcoming alarm area  */
+.main{
+    height: 90%;
+    width: 100%;
+    color:#6d5dfc;
+    text-align: center;
+}
+#time{
+    position: relative;
+    top: 5%;
+    height: 10%;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0px 0px 10px gray;
+    padding-top: 3%;
+}
+
+#time-container {
+    position: relative;
+    top: 9%;
+    height: 10%;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0px 0px 10px gray;
+    padding-top: 5%;
+}
+#upcoming-alarm-display{
+    position: relative;
+    top: 15%;
+    height: 40%;
+    background-color: white;
+    border-radius: 22px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+#upcoming-alarm-display h2{
+    height: 30%;
+}   
+#upcoming-alarm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+#upcoming-alarm button {
+    background-color:#6d5dfc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 22px;
+}
+
+#upcoming-alarm button:hover {
+    box-shadow: 0px 5px 5px gray;
+}
+/* footer of the alarm, add button */
+footer{
+    position: relative;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    color: white;
+}
+
+.add-alarm {
+    position: relative;
+    left: 5%;
+    border: 1px solid white;
+    border-radius: 22px;
+    height: 80%;
+    width: 90%;
+    text-align: center;
+    background-color: #6d5dfc;
+    box-shadow: 0px 5px 5px white;
+    transition: 0.3s linear;
+}
+
+.add-alarm:hover {
+    box-shadow: 0px 5px 5px gray;
+}
+
+.add-alarm h1{
+    position: relative;
+    top: 15%;
+    transition: 0.3s linear;
+}
+
+.add-alarm:hover h1{
+    font-size: 30px;
+}
+
+
+/* styles for adder screen  */
+.adder-screen {
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0;
+    background-color: white;
+}
+
+.setTime {
+    height: 30%;
+    width: 90%;
+    /* border: 1px solid black; */
+    color: #6d5dfc;
+}
+
+label {
+	display:inline-block;
+}
+
+.adder-screen select{
+    background-color:#6d5dfc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 22px;
+}
+
+.adder-screen select:hover{
+    box-shadow: 0px 5px 5px gray;
+}
+
+/* done button used when user want to save the alarm */
+.doneButton{
+    height: 15%;
+    width: 90%;
+    border: 1px solid white;
+    border-radius: 22px;
+    text-align: center;
+    color: white;
+    background-color: #6d5dfc;
+}
+
+.doneButton:hover{
+    box-shadow: 0px 5px 5px gray;
+}
+
+.doneButton h1{
+    position: relative;
+    top: 15%;
+    transition: 0.3s linear;
+}
+
+
+.doneButton:hover h1{
+    font-size: 30px;
+}

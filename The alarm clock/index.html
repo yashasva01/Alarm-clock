@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style link -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Document</title>
+    <!-- js link -->
+
+</head>
+<body>
+    <main>
+        <!-- All the upcomming alarm list  -->
+        <div class="alarm-list">
+            <!-- alarm clock title -->
+            <header class="title">
+                <h1>
+                    ALARM CLOCK
+                </h1>
+            </header>
+
+            <div class="main">
+                <h1 id="time"> TIME </h1>
+
+                <div id='time-container'>
+                    <h2 id='clock'></h2>
+                </div>
+
+                <div id="upcoming-alarm-display">
+                    <h2>Upcoming Alarm</h2>
+                    <div id="upcoming-alarm" style="display: none;">
+                        <h2 id="alarm-display">
+                        </h2>
+
+                        <button id="alarm-delete" onclick="alarmClear()">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="add-alarm" onclick="openAdderWindow()">
+                    <h1> Add New Alarm </h1>
+                </div>
+            </footer>   
+            <div class="adder-screen" style="display: none;" id="alarm-adder">
+                <div class="setTime">
+                    <h2>Set Alarm Time</h2>
+				<label>
+					<div>
+					<select id='alarmhrs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmmins' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+					<select id='alarmsecs' ></select>
+					</div>
+				</label>
+				<label>
+					<div>
+						<select id="ampm">
+							<option value="AM">AM</option>
+							<option value="PM">PM</option>
+						</select>
+					</div>
+				</label>
+                </div>
+                <div class="doneButton" onclick="doneButton()">
+                    <h1>
+                        Done
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="./scripts.js"></script> 
+</body>
+</html>
